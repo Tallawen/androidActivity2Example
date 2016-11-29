@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
         /* Tworzymy obiekt intencji */
         Intent intent = new Intent(this, SecondActivity.class);
 
+        /* Przekazujemy wiadomości */
+        intent.putExtra("1", "wiadomość 1");
+        intent.putExtra("2", "inna wiadomość");
+
         /* Uruchamiamy */
-        startActivity(intent);
+        startActivityForResult(intent, -1);
     }
 }
