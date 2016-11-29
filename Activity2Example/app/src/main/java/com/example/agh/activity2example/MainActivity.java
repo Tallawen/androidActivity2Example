@@ -1,5 +1,6 @@
 package com.example.agh.activity2example;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openSecondActivity(View view) {
+        /* Tworzymy obiekt intencji */
+        Intent intent = new Intent(this, SecondActivity.class);
 
+        /* Uruchamiamy */
+        startActivity(intent);
     }
 }

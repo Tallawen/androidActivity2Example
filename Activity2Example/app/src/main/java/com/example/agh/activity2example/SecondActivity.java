@@ -13,6 +13,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void closeActivity(View view) {
+        finish();
     }
 
 }
